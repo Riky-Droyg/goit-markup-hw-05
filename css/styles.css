@@ -25,7 +25,6 @@ Single-colored icons can be modified like so:
 	--color-modal: #2e2f42;
 	--color-modal-two: #8e8f99;
 	--color-modal-three: #404bbf;
-	
 }
 
 body {
@@ -564,6 +563,9 @@ a {
 .modal__form-block {
 	margin-bottom: 8px;
 }
+.modal__form-block__mairgin {
+	margin-bottom: 16px;
+}
 .modal__form-block__label {
 	font-size: 12px;
 	line-height: 1.17;
@@ -640,10 +642,14 @@ a {
 	justify-content: center;
 	fill: transparent;
 }
-#user-privacy:checked + .modal__form-block__checkbox-label__span {
-	background-color: var(--color-modal-three);
+#user-privacy:checked + .modal__form-block__checkbox-label .modal__form-block__checkbox-label__span {
+	background-color: var(--color-modal-three); /* #404bbf */
 	border: none;
-	fill: var(--color);
+}
+
+/* колір іконки всередині span */
+#user-privacy:checked + .modal__form-block__checkbox-label .modal__form-block__checkbox-label__span svg {
+	fill: var(--color); /* #F4F4FD */
 }
 .modal__form-block__checkbox-label_link {
 	color: var(--color-footer);
