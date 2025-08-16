@@ -643,14 +643,12 @@ a {
 	fill: transparent;
 }
 #user-privacy:checked + .modal__form-block__checkbox-label .modal__form-block__checkbox-label__span {
-	background-color: var(--color-modal-three); /* #404bbf */
+	background-color: var(--color-modal-three); 
 	border: none;
+	fill: var(--color);
 }
 
-/* колір іконки всередині span */
-#user-privacy:checked + .modal__form-block__checkbox-label .modal__form-block__checkbox-label__span svg {
-	fill: var(--color); /* #F4F4FD */
-}
+
 .modal__form-block__checkbox-label_link {
 	color: var(--color-footer);
 }
