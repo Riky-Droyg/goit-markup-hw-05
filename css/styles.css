@@ -444,10 +444,11 @@ a {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: #ffffff;
-	gap: 24px;
 }
 .footer-info__form {
 	display: flex;
+		gap: 24px;
+
 }
 .footer-info__form-label {
 }
