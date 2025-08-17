@@ -170,6 +170,7 @@ p {
 	letter-spacing: 0.02em;
 	color: #ffffff;
 	max-width: 496px;
+	margin-bottom: 48px;
 }
 .font__link-text {
 	display: block;
@@ -391,9 +392,9 @@ p {
 .footer-container {
 	display: flex;
 	align-items: baseline;
-	justify-content: space-between;
 }
 .footer-info {
+	margin-right: 120px;
 }
 .footer__logo {
 	display: inline-block;
@@ -405,6 +406,9 @@ p {
 	letter-spacing: 0.02em;
 	max-width: 264px;
 	margin: 0;
+}
+.footer-info__contacts-wrapper{
+	margin-right: auto;
 }
 .footer-info__contacts-text {
 	font-weight: 500;
@@ -509,7 +513,7 @@ p {
 	background-color: rgba(46, 47, 66, 0.4);
 	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.is-open{
+.is-open {
 	display: block;
 }
 .modal {
@@ -626,6 +630,16 @@ p {
 	resize: none;
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal__form-block__textarea::placeholder {
+	font-family: Roboto;
+	font-weight: 400;
+	font-style: Regular;
+	font-size: 12px;
+	leading-trim: NONE;
+	line-height: 14px;
+	letter-spacing: 4%;
+	color: #2e2f4266;
+}
 .modal__form-block__textarea:focus {
 	border-color: #4d5ae5;
 }
@@ -652,6 +666,7 @@ p {
 	align-items: center;
 	justify-content: center;
 	fill: transparent;
+	margin-right: 8px;
 }
 #user-privacy:checked + .modal__form-block__checkbox-label .modal__form-block__checkbox-label__span {
 	background-color: var(--color-modal-three);
@@ -677,4 +692,5 @@ p {
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	border: none;
 	margin: 0 auto;
+	border-radius: 4px;
 }
